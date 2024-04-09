@@ -10,7 +10,7 @@ export default function Home() {
   const [data, setData] = useState<any>([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api")
+    fetch("https://bike-photos.vercel.app/api")
       .then((response) => response.json())
       .then((json) => setData(json));
   }, []);
